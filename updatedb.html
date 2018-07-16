@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Billing Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div class="row">
+        <div class="col s12 m8">
+<table>
+  <tr style="background-color: ghostwhite;border: 3.5px solid black">
+  <th>Id</th>
+  <th>Bike</th>
+  <th>Price</th>
+  <th>OrderDate</th>
+  </tr>
+    <form method="POST" action="updatedb.php">
+    <tr>
+        <td><input class="input-field" type="number" name="id" placeholder="Enter id"></td>
+        <td><input type="text" class="input-field" name="bike" placeholder="Enter Bike model"></td>
+        <td><input type="number" name="price" class="input-field" placeholder="Enter Bike Price"></td>
+        <td><input type="date" name="orderdate" class="input-field"></td>
+    </tr>
+    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>        
+            </button>
+</table>
+    </form>
+<style>
+    input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+input[type="date"]::-webkit-inner-spin-button, 
+input[type="date"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr{
+    background-color: gray;
+}
+
+</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+</body>
+</html>
