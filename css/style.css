@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+body {
+  background: black;
+}
+
+.input-field input[type=date]:focus + label,
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label {
+  color: #e91e63;
+}
+
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+  border-bottom: 2px solid #e91e63;
+  box-shadow: none;
+}
+
+*{
+  padding: 0%;
+  margin: 0;
+  font-family: fantasy;
+}
+.container span{
+  text-transform: uppercase;
+  display: block;
+}
+.container{
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%,-50%);
+}
+.text1{
+font-size: 50px;
+font-weight: 700;
+letter-spacing: 8px;
+margin-bottom: 20px;
+position: relative;
+background: black;
+animation: text 3s 1;
+}
+.text2{
+  font-size: 30px;
+  color:black;
+}
+@keyframes text{
+0%{
+  color:black;
+  margin-bottom: -40px;
+}
+25%{
+  letter-spacing: 25px;
+  margin-bottom: -40px;
+}
+85%{
+  letter-spacing: 8px;
+  margin-bottom: -40px;
+}
+}
